@@ -1,0 +1,280 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: #0e0e0e;
+    color: white;
+    margin: 0;
+}
+
+.navbar {    
+    display: flex;
+    padding-left:  80px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #0e0e0e;
+    z-index: 1000;
+    border: 0.1px solid #313335;
+}
+
+#logo {
+    width: 20px;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 12px;
+}
+
+.navbar-item {
+    font-size: 16px;
+    color: #9ba3b4;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 12px;
+    font-weight: 550;
+}
+
+.navbar-item:hover {
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #9ba3b4;
+}
+
+#version {
+    color: #4daafc;
+    text-decoration: underline;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-item {
+    padding: 0 5px;
+}
+.theme-icon-light
+{
+    width: 25px;
+}
+.search-bar {
+    border: 0.1px solid #313335; 
+    padding: 5px 12px; 
+    width: 180px; 
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background-color: #0e0e0e; 
+}
+
+#search-bar {
+    border: none;
+    font-size: 15px;
+    background-color: transparent; 
+    color: white; 
+    width: 100%; 
+}
+
+#search-bar::placeholder {
+    color: #9ba3b4; 
+}
+
+.search-icon-dark {
+    margin-right: 8px;
+    
+}
+
+
+#search-bar:focus {
+    outline: none;
+}
+
+.download-button {
+    background-color: #0078d4;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 6px 18px;
+    font-weight: 550;
+}
+
+.download-button:hover {
+    background-color: #0366bc;
+}
+
+.content
+{
+    border-bottom: 1px solid #313335;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.tagline {
+    color: #9ba3b4;
+    border: 1px solid #313335;
+    border-radius: 20px;
+    background-color: #171717;
+    padding: 8px 12px; 
+    font-size: 14px;
+    width: 280px;
+}
+
+#screenshot {
+    width: 750px;
+    height: 450px;
+}
+
+
+
+.hero-text {
+    color: #e9eaeb;
+    width: 50px; 
+    font-weight: 500;
+    padding: 20px 0;
+    
+    
+    font-size: 55px; 
+    letter-spacing: -0.4px;
+    line-height: 1.1; 
+    
+}
+
+.hero-text p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.25;
+}
+
+.download-windows {
+    background-color: #0078d4;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 14px 22px;
+    font-weight: 550;
+    text-align: center;
+    width: 200px;
+
+}
+
+.download-windows:hover {
+    background-color: #0366bc;
+}
+
+.privacy 
+{
+    padding-bottom:10px;
+    font-size: 11px;
+    color: #9ba3b4;
+}
+.privacy a
+{
+    
+    color: #0078d4;
+    text-decoration: underline;
+}
+
+.editions 
+{
+    padding: 10px 0;
+    font-size: 16px;
+    color: #9ba3b4;
+}
+.editions a
+{
+    
+    color: #0078d4;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.langs {
+    display: flex;
+    padding: 80px 60px;
+    background-color: rgb(6, 6, 6);
+    justify-content: left;
+    font-weight: 600;
+    
+}
+
+.langs-description {
+    width: 30%;
+    padding-right: 40px;
+}
+
+h3 {
+    text-decoration: none;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.langs-content {
+    color: #9ba3b4;
+    line-height: 1.5;
+    font-weight: 600;
+    
+}
+
+.lang-lists {
+    display: flex;
+    justify-content: space-between;
+    width:55%;
+    padding-top: 30px;
+        
+}
+
+
+
+.lang-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lang-list-item img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.lang-list-item p {
+    color: #9ba3b4;
+    margin: 0;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+    font-weight: 500;
+}
