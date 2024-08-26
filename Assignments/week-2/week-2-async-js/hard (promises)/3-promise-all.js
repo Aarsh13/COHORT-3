@@ -1,23 +1,37 @@
-/*
- * Write 3 different functions that return promises that resolve after t1, t2, and t3 seconds respectively.
- * Write a function that uses the 3 functions to wait for all 3 promises to resolve using Promise.all,
- * Return a promise.all which return the time in milliseconds it takes to complete the entire operation.
- */
+function sleep(n) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, n * 1000);
+    });
+}
 
 function wait1(t) {
-
+    return sleep(t).then(() => {
+        console.log("hello1");
+    });
 }
 
 function wait2(t) {
-
+    return sleep(t).then(() => {
+        console.log("hello2");
+    });
 }
 
 function wait3(t) {
-
+    return sleep(t).then(() => {
+        console.log("hello3");
+    });
 }
 
 function calculateTime(t1, t2, t3) {
+    console.log("hello start");
+    let then = new Date().getTime();
 
+    return Promise.all([wait1(t1), wait2(t2), wait3(t3)]).then(() => {
+        let now = new Date().getTime();
+        return now - then;
+    });
 }
 
-module.exports = calculateTime;
+calculateTime(1, 2, 3).then((time) => {
+    console.log(`Total time: ${time} ms`);
+});

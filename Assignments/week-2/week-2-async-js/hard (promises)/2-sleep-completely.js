@@ -5,6 +5,16 @@
  */
 
 function sleep(milliseconds) {
+    let now= new Date().getTime();
+    while(new Date().getTime() < now + milliseconds)
+        {
+            // do nothing
+        };
+    return  Promise.resolve();
 }
 
-module.exports = sleep;
+console.log("Start");
+
+let p= sleep(5000);
+
+console.log("End");

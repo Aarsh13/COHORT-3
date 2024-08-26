@@ -1,8 +1,15 @@
-/*
-    Write a function that returns a promise that resolves after n seconds have passed, where n is passed as an argument to the function.
-*/
+// Modified function that takes a parameter for the delay in seconds
 
-function wait(n) {
+function setTimeoutPromisified(n) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, n*1000);
+    });
 }
 
-module.exports = wait;
+
+function hello() {
+    console.log("hello");
+}
+
+
+let p = setTimeoutPromisified(5).then(hello); 
