@@ -31,3 +31,10 @@ To view this project, simply clone the repository and open the `index.html` file
 git clone https://github.com/your-username/vscode-landing-page.git
 cd vscode-landing-page
 open index.html
+```
+
+## Live Demo
+
+You can view a live demo of the project [here](https://aarsh13.github.io/VSCode-Landing-Page/).
+
+---
