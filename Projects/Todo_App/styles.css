@@ -1,0 +1,113 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 50px 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa, #a4fafa);
+    
+    border: 6px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.todos
+{
+    border-top: 1px solid black;
+    padding: 20px;
+}
+
+.todoEl, .todoEl-checked {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 450px;
+    margin: 15px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.todoEl:hover{
+    background-color: aliceblue;
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.todoEl-checked:hover{
+    
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.todoEl span, .todoEl-checked span {
+    flex: 1;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.todoEl-checked {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.todoEl-checked h4 {
+    text-decoration: line-through;
+    color: #e0e0e0;
+}
+
+.todoEl img, .todoEl-checked img {
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ;
+}
+
+.todoEl img:hover, .todoEl-checked img:hover {
+    transform: scale(1.2);
+}
+
+#inpBox {
+    border: none;
+    background-color: #444;
+    height: 55px;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #fff;
+    flex: 1;
+    margin-right: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#inpBox:focus {
+    background-color: #555;
+    outline: none;
+}
+
+#addButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#addButton:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
