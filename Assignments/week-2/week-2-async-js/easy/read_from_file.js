@@ -5,14 +5,21 @@
 // Try to do an expensive operation below the file read and see how it affects the output. 
 // Make the expensive operation more and more expensive and see how it affects the output. 
 
-const fs=require('fs');
-const filepath ="a.txt"
+const fs = require('fs');
+const filepath = "a.txt";
 
-fs.readFile(filepath, (err, data)=>{
-    if(err) console.log("Code exited with error: "+err)
-    else
-    {
-        console.log(data);
+fs.readFile(filepath, "utf-8", (err, data) => {
+    if (err) {
+        console.log("Code exited with error: " + err);
+    } else {
+        console.log("File content:\n", data);
     }
+});
 
-})
+let sum = 0;
+for (let i = 0; i < 1e9; i++) 
+{ 
+    sum += i;
+}
+
+console.log("Sum: " + sum);
