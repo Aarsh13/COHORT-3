@@ -76,9 +76,6 @@ node todo.js Deleted
 
 - **todos.json:** This file stores your todos in JSON format. It keeps track of pending and deleted todos.
 
-## License
-
-This project is open-source and available under the MIT License.
 
 ## Acknowledgements
 
