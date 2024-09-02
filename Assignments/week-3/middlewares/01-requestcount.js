@@ -9,6 +9,7 @@ let requestCount = 0;
 // Your task is to create a global middleware (app.use) which will
 // maintain a count of the number of requests made to the server in the global
 // requestCount variable
+// Also create an endpoint that exposes it
 
 app.use((req,res, next)=>
 {
