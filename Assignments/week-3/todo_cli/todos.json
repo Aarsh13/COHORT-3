@@ -1,5 +1,10 @@
 {
-  "pending_todos": [],
-
-  "deleted_todos": []
+   "pending_todos": [
+      {
+         "id": 1,
+         "task": "Call Nik",
+         "completed": false
+      }
+   ],
+   "deleted_todos": []
 }
